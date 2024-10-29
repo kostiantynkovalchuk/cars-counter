@@ -51,6 +51,8 @@ button {
   margin: 0 auto; /* centers the div */
   padding: 0 20px; /* optional padding */
   border-radius: 10px;
+  width: 50vw;         /* Occupies 50% of the viewport width */
+  height: 50vh; 
 
 }
 
