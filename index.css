@@ -6,33 +6,44 @@ body {
     text-align: center;
     color: black;
     height: 100vh;
-    
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 30px;
+    max-width: 50%;
+    width: 90%;
+    border: 1px solid grey;
+    border-radius: 10px;
 }
 
 h1 {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 2rem; /* Increased font size */
     color: darkred;
 }
-    
-
 
 h2 {
-    font-size: 50px;
-    margin-top: 0;
-    margin-bottom: 20px;
+    font-size: 4rem; /* Increased font size */
+    margin: 0;
     color: darkred;
 }
 
 button {
     border: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 15px;
     color: white;
     font-weight: bold;
-    width: 200px;
-    margin-bottom: 5px;
+    font-size: 1.2rem; /* Increased font size */
+    width: 150px;
+    margin: 10px 5px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 #increment-btn {
@@ -43,37 +54,14 @@ button {
     background: black;
 }
 
-.container {
-    background: white;
-    opacity: 0.7;
-    max-width: 80%;
-    margin: auto;
-    border: 1px solid grey;
-    border-radius: 10px;
-}
-
 .footer {
-    font-weight: lighter;
+  font-weight: lighter;
     position: fixed;
     bottom: 0;
-    width: 100%;
-    opacity: 0.5;
+    opacity: 0.9;
+    padding: 10px;
+    font-size: 0.9rem;
+    left: 0;
+    right: 0;
+  
 }
-
-/* Media query for tablets and smaller screens */
-@media (max-width: 768px) {
-  .container {
-    max-width: 90%; /* sets the width to 90% of the screen on tablets */
-    padding: 0 15px; /* reduce padding slightly */
-  }
-}
-
-/* Media query for smartphones */
-@media (max-width: 480px) {
-  .container {
-    max-width: 100%; /* makes the container full-width on smartphones */
-    padding: 0 10px; /* further reduce padding for small screens */
-  }
-}
-
-
