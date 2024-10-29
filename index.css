@@ -1,67 +1,96 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 body {
     background-image: url("car.jpg");
     background-size: cover;
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    color: black;
-    height: 100vh;
-    margin: 0;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    font-weight: bold;
 }
 
-.container {
-    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-    padding: 30px;
-    max-width: 50%;
-    width: 90%;
-    border: 1px solid grey;
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+}
+
+.counter-container {
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-size: 2rem; /* Increased font size */
-    color: darkred;
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
 }
 
 h2 {
-    font-size: 4rem; /* Increased font size */
-    margin: 0;
-    color: darkred;
+    font-size: 4rem;
+    color: #b22222;
+    margin: 20px 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
 }
 
 button {
-    border: none;
-    padding: 15px;
-    color: white;
+    background-color: #b22222;
+    color: #fff;
+    font-size: 1.1rem;
     font-weight: bold;
-    font-size: 1.2rem; /* Increased font size */
-    width: 150px;
-    margin: 10px 5px;
-    border-radius: 10px;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 8px;
     cursor: pointer;
+    transition: background 0.3s;
 }
 
-#increment-btn {
-    background: darkred;
+#increment-btn:hover {
+    background-color: #a31d1d;
 }
 
 #save-btn {
-    background: black;
+    background-color: #333;
+}
+
+#save-btn:hover {
+    background-color: #444;
+}
+
+#save-el {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
 }
 
 .footer {
-  font-weight: lighter;
-    position: fixed;
-    bottom: 0;
-    opacity: 0.9;
-    padding: 10px;
+    text-align: center;
     font-size: 0.9rem;
+    color: #777;
+    padding: 15px 0;
     left: 0;
     right: 0;
-  
+    position: absolute;
+    bottom: 0;
 }
