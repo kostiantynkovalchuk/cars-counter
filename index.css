@@ -5,6 +5,7 @@ body {
     font-weight: bold;
     text-align: center;
     color: white;
+    height: 100vh;
 
 }
 
@@ -46,6 +47,8 @@ button {
   max-width: 1200px; /* sets maximum width */
   margin: 0 auto; /* centers the div */
   padding: 0 20px; /* optional padding */
+  border-radius: 10px;
+  margin-top: 10rem;
 }
 
 
